@@ -1,0 +1,10 @@
+services:
+  sms-service:
+    build: .
+    ports:
+      - "5075:5075"
+    volumes:
+      - sms-data:/data
+
+volumes:
+  sms-data:
